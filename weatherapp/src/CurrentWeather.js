@@ -80,7 +80,7 @@ function CurrentWeather() {
       "Oops! Location not accessible.  You will see default weather as per Delhi coords"
     );
   const cityDataNotFound = () =>
-    toast("Oops! Data for the city is unavailable.");
+    toast("Oops! Data for the city not found.");
 
   //function to handle submit of the city(to fetch thr new data as per the city coords)
   async function handleSubmit(e) {

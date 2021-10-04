@@ -7,10 +7,17 @@
 }
 
 body {
-  background: url("https://images.unsplash.com/photo-1621274403997-37aace184f49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1");
-  background-repeat: no-repeat;
+  /* background: url("https://images.unsplash.com/photo-1621274403997-37aace184f49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1"); */
+  background: url("./pexels-johannes-plenio-1118873.jpg") center center fixed no-repeat;
+
+  /* background: rgb(115, 117, 238); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% auto; */
   /* background-size: cover; */
   /* overflow-y: scroll; */
+  background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;       
   height: 110vh;
   font-family: "Poppins", sans-serif;
 }
@@ -42,6 +49,7 @@ table{
 }
 
 .search-bar {
+  margin-top: 15px;
   text-align: center;
   max-width: 100%;
   max-height: 100px;
@@ -228,8 +236,17 @@ table{
   .future-forecast::-webkit-scrollbar {
     display: none;
   }
+  
   table::-webkit-scrollbar{
-    display: none;
-
-  }
+    width: 10px;
+    align-items: center;
+  
+    }
+    table::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    table::-webkit-scrollbar-thumb {
+      background-color: #d6dee1;
+      border-radius: 20px;
+    }
 }
